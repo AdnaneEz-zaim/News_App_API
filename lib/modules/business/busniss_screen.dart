@@ -22,12 +22,6 @@ class BusinessScreen extends StatelessWidget {
             itemBuilder: (context,index){
               print("$index :"+ listBusiness[index]['content'].toString());
               print(listBusiness.length);
-//              listBusiness[index]['source']['name'],
-//              listBusiness[index]['title'],
-//              listBusiness[index]['url'],
-//              listBusiness[index]['urlToImage'].toString(),
-//              listBusiness[index]['publishedAt'],
-//              listBusiness[index]['content'].toString()
               return MyArticle(new Article(listBusiness[index]['source']['name'].toString(),
                   listBusiness[index]['title'].toString(),
                   listBusiness[index]['url'].toString(),
